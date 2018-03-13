@@ -13,6 +13,7 @@ use \EasySwoole\Core\Swoole\ServerManager;
 use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
+use Illuminate\Database\Capsule\Manager as Capsule;
 use \EasySwoole\Core\Swoole\EventHelper;
 use \EasySwoole\Core\Http\Parser;
 
@@ -22,6 +23,15 @@ Class EasySwooleEvent implements EventInterface {
     {
         // TODO: Implement frameInitialize() method.
         date_default_timezone_set('Asia/Shanghai');
+         // 初始化数据库
+        $dbConf = Config::getInstance()->getConf('database');
+        $capsule = new Capsule;
+        // 创建链接
+        $capsule->addConnection($dbConf);
+        // 设置全局静态可访问
+        $capsule->setAsGlobal(); 
+        // 启动Eloquent
+        $capsule->bootEloquent();
     }
 
     public function mainServerCreate(ServerManager $server,EventRegister $register): void

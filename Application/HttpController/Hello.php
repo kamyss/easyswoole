@@ -78,11 +78,16 @@ class Hello extends Controller
 		//getSwooleResponse
 	}
 	//手动指定返回状态吗
-	functin sendStatus(){
+	function sendStatus(){
 		$this->response()->withStatus($statusCode);
 	}
 	//向客户端发送header
 	function sendHeader(){
 		$this->response()->withHeader('Content-type','application/json;charset=utf-8');
+	}
+	//测试用laravel库的Illuminate\Database库连接是否成功
+	function laravelData(){
+		$version = Capsule::select('select version();');
+		$this->response()->write($version);
 	}
 }

@@ -41,11 +41,11 @@ return [
 	'database' => [ 
      'driver'    => 'mysql',
      'host'      => 'localhost',
-     'database'  => '',
+     'database'  => 'easyswoole',
      'username'  => 'root',
      'password'  => 'root',
      'charset'   => 'utf8',
      'collation' => 'utf8_general_ci',
-     'prefix'    => ''
+     'prefix'    => 'sw'
  ]
 ];
