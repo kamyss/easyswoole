@@ -37,5 +37,15 @@ return [
         'serviceTTL'=>10,
         'serverName'=>'easySwoole',
         'serverId'=>null
-    ]
+    ],
+	'database' => [ 
+     'driver'    => 'mysql',
+     'host'      => 'localhost',
+     'database'  => '',
+     'username'  => 'root',
+     'password'  => 'root',
+     'charset'   => 'utf8',
+     'collation' => 'utf8_general_ci',
+     'prefix'    => ''
+ ]
 ];
