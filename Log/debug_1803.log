@@ -1,0 +1,31 @@
+18-03-13 17:52:11:file[/home/www/EasySwooleEvent.php] line[29] message:[Class 'EasySwoole\EventHelper' not found]
+18-03-13 17:52:11:file[/home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php] line[64] message:[swoole_http_server::start(): require onMessage callback]
+18-03-13 18:09:38:file[/home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php] line[20] message:[Uncaught ArgumentCountError: Too few arguments to function EasySwoole\Core\Socket\WebSocketController::__construct(), 0 passed in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php on line 17 and exactly 3 expected in /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php:20
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php(17): EasySwoole\Core\Socket\WebSocketController->__construct()
+#1 /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php(74): EasySwoole\Core\Http\Parser->decode('{"action":"who"...', Object(EasySwoole\Core\Socket\Client\WebSocket))
+#2 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(130): EasySwoole\Core\Socket\Dispatcher->dispatch(2, '{"action":"who"...', Object(swoole_websocket_frame))
+#3 [internal function]: EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(swoole_websocket_server), Object(swoole_websocket_frame))
+#4 /home/www/vendor/easyswoole/easyswoole/sr]
+18-03-13 18:10:46:file[/home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php] line[20] message:[Uncaught ArgumentCountError: Too few arguments to function EasySwoole\Core\Socket\WebSocketController::__construct(), 0 passed in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php on line 17 and exactly 3 expected in /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php:20
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php(17): EasySwoole\Core\Socket\WebSocketController->__construct()
+#1 /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php(74): EasySwoole\Core\Http\Parser->decode('{"action":"who"...', Object(EasySwoole\Core\Socket\Client\WebSocket))
+#2 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(130): EasySwoole\Core\Socket\Dispatcher->dispatch(2, '{"action":"who"...', Object(swoole_websocket_frame))
+#3 [internal function]: EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(swoole_websocket_server), Object(swoole_websocket_frame))
+#4 /home/www/vendor/easyswoole/easyswoole/sr]
+18-03-13 18:11:37:file[/home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php] line[17] message:[Uncaught Error: Class 'Test' not found in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php:17
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php(74): EasySwoole\Core\Http\Parser->decode('{"action":"who"...', Object(EasySwoole\Core\Socket\Client\WebSocket))
+#1 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(130): EasySwoole\Core\Socket\Dispatcher->dispatch(2, '{"action":"who"...', Object(swoole_websocket_frame))
+#2 [internal function]: EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(swoole_websocket_server), Object(swoole_websocket_frame))
+#3 /home/www/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(58): call_user_func_array(Object(Closure), Array)
+#4 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(150): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 [internal function]: EasySwoole\Core\Swoole\ServerManager->EasySwoole\Core\Swoole\{closure}(O]
+18-03-13 18:12:01:file[/home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php] line[20] message:[Uncaught ArgumentCountError: Too few arguments to function EasySwoole\Core\Socket\WebSocketController::__construct(), 0 passed in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php on line 17 and exactly 3 expected in /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php:20
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php(17): EasySwoole\Core\Socket\WebSocketController->__construct()
+#1 /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php(74): EasySwoole\Core\Http\Parser->decode('{"action":"who"...', Object(EasySwoole\Core\Socket\Client\WebSocket))
+#2 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(130): EasySwoole\Core\Socket\Dispatcher->dispatch(2, '{"action":"who"...', Object(swoole_websocket_frame))
+#3 [internal function]: EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(swoole_websocket_server), Object(swoole_websocket_frame))
+#4 /home/www/vendor/easyswoole/easyswoole/sr]

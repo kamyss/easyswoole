@@ -1,0 +1,24 @@
+[2018-03-13 18:03:49 *2540.3]	NOTICE	zm_deactivate_swoole (ERROR 9003): worker process is terminated by exit()/die().
+[2018-03-13 18:04:28 *2561.3]	NOTICE	zm_deactivate_swoole (ERROR 9003): worker process is terminated by exit()/die().
+[2018-03-13 18:08:35 *2583.3]	NOTICE	zm_deactivate_swoole (ERROR 9003): worker process is terminated by exit()/die().
+[2018-03-13 18:09:38 *2604.3]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught ArgumentCountError: Too few arguments to function EasySwoole\Core\Socket\WebSocketController::__construct(), 0 passed in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php on line 17 and exactly 3 expected in /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php:20
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php(17): EasySwoole\Core\Socket\WebSocketController->__construct()
+#1 /home
+[2018-03-13 18:09:38 $2591.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2018-03-13 18:10:30 *2626.3]	NOTICE	zm_deactivate_swoole (ERROR 9003): worker process is terminated by exit()/die().
+[2018-03-13 18:10:46 *2647.3]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught ArgumentCountError: Too few arguments to function EasySwoole\Core\Socket\WebSocketController::__construct(), 0 passed in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php on line 17 and exactly 3 expected in /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php:20
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php(17): EasySwoole\Core\Socket\WebSocketController->__construct()
+#1 /home
+[2018-03-13 18:10:46 $2634.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2018-03-13 18:11:37 *2688.3]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught Error: Class 'Test' not found in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php:17
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php(74): EasySwoole\Core\Http\Parser->decode('{"action":"who"...', Object(EasySwoole\Core\Socket\Client\WebSocket))
+#1 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(130): EasySwoole\Core\Socket\Dispatcher->dispatch(2, '{"action":"who"...', Object(s
+[2018-03-13 18:11:37 $2675.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
+[2018-03-13 18:12:01 *2709.3]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught ArgumentCountError: Too few arguments to function EasySwoole\Core\Socket\WebSocketController::__construct(), 0 passed in /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php on line 17 and exactly 3 expected in /home/www/vendor/easyswoole/easyswoole/src/Core/Socket/WebSocketController.php:20
+Stack trace:
+#0 /home/www/vendor/easyswoole/easyswoole/src/Core/Http/Parser.php(17): EasySwoole\Core\Socket\WebSocketController->__construct()
+#1 /home
+[2018-03-13 18:12:01 $2696.0]	WARNING	swManager_check_exit_status: worker#3 abnormal exit, status=255, signal=0
