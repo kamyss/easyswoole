@@ -1,6 +1,8 @@
 <?php
 namespace App\HttpController;
 use EasySwoole\Core\Http\AbstractInterface\Controller;
+use Illuminate\Database\Capsule\Manager as Capsule;
+use App\Model\User;
 /*
 *系统方法类
 */
@@ -87,7 +89,47 @@ class Hello extends Controller
 	}
 	//测试用laravel库的Illuminate\Database库连接是否成功
 	function laravelData(){
-		$version = Capsule::select('select version();');
-		$this->response()->write($version);
+		$version = Capsule::select('select * from sw_users');
+		var_dump($version);
+		//$this->response()->write($version);
 	}
+	//laravel数据库查询某条记录信息
+	function getUserInfo(){
+		$params=$this->request()->getQueryParams();
+		var_dump($params);
+		
+		$userInfo=Capsule::table('users')->where('userName','=',$params['userName'])->get();
+		var_dump($userInfo);	
+	}
+	//用select查出用两个参数查询的记录
+	function getSelectCondition(){
+		$params=$this->request()->getQueryParams();
+		var_dump($params);
+		$params2=array(0=>$params['userName'],1=>$params['password']);
+		$userInfo=Capsule::select('select * from sw_users where userName=? and password=?',$params2);
+		var_dump($userInfo);
+	}
+	//创建表格
+	function createTable(){
+		Capsule::schema()->create('area', function ($table) {
+    $table->increments('id');
+    $table->string('areaName')->unique();
+    $table->timestamps();
+	});
+	}
+	//使用laravel Eloquent数据库操作
+	function eloquentTest(){
+		   // 查询id为2的
+    $user = User::find(2);
+
+    // 查询全部
+    //$users = User::all();
+
+    // 创建数据
+   // $user = new User;
+    $user->userName = 'lalala';
+    $user->password = 'haha@xxx.com';
+    $user->save();
+	}
+	
 }

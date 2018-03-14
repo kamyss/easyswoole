@@ -13,7 +13,7 @@ use \EasySwoole\Core\Swoole\ServerManager;
 use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
-use Illuminate\Database\Capsule\Manager as Capsule;
+use \Illuminate\Database\Capsule\Manager as Capsule;
 use \EasySwoole\Core\Swoole\EventHelper;
 use \EasySwoole\Core\Http\Parser;
 

@@ -29,3 +29,7 @@ Stack trace:
 #2 /home/www/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(130): EasySwoole\Core\Socket\Dispatcher->dispatch(2, '{"action":"who"...', Object(swoole_websocket_frame))
 #3 [internal function]: EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(swoole_websocket_server), Object(swoole_websocket_frame))
 #4 /home/www/vendor/easyswoole/easyswoole/sr]
+18-03-13 22:41:50:file[/home/www/Application/HttpController/Hello.php] line[106] message:[Undefined index: userName]
+18-03-13 22:41:50:file[/home/www/Application/HttpController/Hello.php] line[106] message:[Undefined index: password]
+18-03-14 00:28:56:file[/home/www/Application/HttpController/Hello.php] line[130] message:[Creating default object from empty value]
+18-03-14 00:29:00:file[/home/www/Application/HttpController/Hello.php] line[130] message:[Creating default object from empty value]
